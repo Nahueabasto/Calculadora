@@ -1,38 +1,26 @@
 .App {
-  text-align: center;
+  height: 100vh; /* altura del navegador*/
+  padding-top: 10px; /* para que el logo no este en la parte 100% superior*/
+  background-color: #1b1b32;
+  font-family: Lato, sans-serif; /* tipo de letra */
+  display: flex; /*  */
+  flex-wrap: wrap; /* para que todos los elementos no esten en la misma linea, sino que se vayan reajustando dependiendo de su tamaño */
+  justify-content: center; /* para centrarlo */ 
+  align-items: center; /* nos permite centrar los elementos dentro del contenedor de App en exactamente el centro, vertical y orizontalmente */ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contenedor-calculadora {
+  width: 400px;
+  height: 600px;
+  padding: 14px;
+  background-color: #99c9ff;
+  border-radius: 20px; /* borde redondeado */
+  border: 5px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fila {
+  margin: 4px;
+  display: flex; /* queremos que todos los elementos de la fila se muestren en una sola linea*/
+  align-items: center; /* alineamos los elementos en el centro */
+  justify-content: center; /* y los alineamos verticalmente*/
 }
